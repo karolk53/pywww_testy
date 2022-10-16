@@ -15,10 +15,9 @@ Including another URLconf
 """
 
 from django.urls import path
-from .views import posts_list,first_post,post_details
+from .views import posts_list,post_details
 
 urlpatterns = [
     path('',posts_list),
-    path('1',first_post),
-    path('details',post_details)
+    path('<post_id>', post_details),
 ]
