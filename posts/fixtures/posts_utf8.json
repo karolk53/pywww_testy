@@ -1,0 +1,50 @@
+[
+{
+  "model": "posts.posts",
+  "pk": 1,
+  "fields": {
+    "title": "Pierwszy post, lol",
+    "content": "Og�lnie to spoko, ale nie wiem o co w tym chodzi :)",
+    "published": true,
+    "created": "2022-09-21T10:24:13.595Z",
+    "modified": "2022-09-21T10:24:21.418Z",
+    "sponsored": false
+  }
+},
+{
+  "model": "posts.posts",
+  "pk": 2,
+  "fields": {
+    "title": "Drugi post",
+    "content": "Kazali doda� kilka wi�c dodaje jeszcze jeden dla zasady ;p",
+    "published": false,
+    "created": "2022-09-21T10:24:49.730Z",
+    "modified": "2022-09-21T10:24:49.730Z",
+    "sponsored": false
+  }
+},
+{
+  "model": "posts.posts",
+  "pk": 3,
+  "fields": {
+    "title": "Trzeci post :|",
+    "content": "No i jeszcze jeden ...",
+    "published": false,
+    "created": "2022-09-21T10:25:10.594Z",
+    "modified": "2022-09-21T10:25:21.512Z",
+    "sponsored": false
+  }
+},
+{
+  "model": "posts.posts",
+  "pk": 4,
+  "fields": {
+    "title": "Post sponsorowany",
+    "content": "Kolejny post testowy, idzie coraz lepiej",
+    "published": false,
+    "created": "2022-10-03T14:47:52.135Z",
+    "modified": "2022-10-03T14:47:52.135Z",
+    "sponsored": true
+  }
+}
+]

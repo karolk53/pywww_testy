@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post`s details</title>
+</head>
+<body>
+{% load posts_extras %}
+<h1>Details about posts</h1>
+<ul>
+{% for post in posts %}
+    <li>
+        Title: {{ post.title }} </br>
+        Signs: {% count_signs post.content %} </br>
+        Words: {% count_words post.content %} </br>
+        Added: {{post.created|date:"D, d M Y"}} </br></br>
+        {% if post.sponsored %}
+            THIS POST IS SPONSORED BY ...
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
+</body>
+</html>

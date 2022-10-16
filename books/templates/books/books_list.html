@@ -1,0 +1,22 @@
+{% extends "C:\Users\Karol\Desktop\pywww\pywww\posts\templates\posts\base.html" %}
+{% block content %}
+    <h1>Lista książek</h1>
+    <table>
+        <tr>
+            <th>Autor</th>
+            <th>Tytył</th>
+            <th>Dostępność</th>
+        </tr>
+        {% for book in books %}
+            <tr>
+                <td>{{ book.author }}</td>
+                <td>{{ book.title }}</td>
+                {% if book.available %}
+                    <td> Na półce </td>
+                {% else %}
+                    <td>Wypożyczona</td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+    </table>
+{%endblock%}

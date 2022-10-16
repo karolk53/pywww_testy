@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista dodanych postów</title>
+</head>
+<body>
+<h1>Tutaj zobaczysz wszystkie dodane posty</h1>
+{% for post in posts %}
+    <h2> {{post.title}} </h2>
+    <small>Data utworzenia: {{post.created}}, data ostatniej modyfikacji {{post.modified}}</small>
+    <p> {{post.content}}</p>
+{% endfor %}
+</body>
+</html>
