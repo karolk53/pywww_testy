@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Post`s details</title>
-</head>
-<body>
-{% load posts_extras %}
-<h1>Details about posts</h1>
+{% extends "posts/base.html" %}
+{% block content %}
+    {% load posts_extras %}
+        <h1>Details about posts</h1>
         Title: {{ post.title }} </br>
         Signs: {% count_signs post.content %} </br>
         Words: {% count_words post.content %} </br>
@@ -14,5 +9,6 @@
         {% if post.sponsored %}
             THIS POST IS SPONSORED BY ...
         {% endif %}
-</body>
-</html>
+        </br>
+        <a href="{% url 'posts:list' %}">Go back to psots list page</a>
+{% endblock %}

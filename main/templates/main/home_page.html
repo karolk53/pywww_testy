@@ -1,0 +1,7 @@
+{%extends "posts/base.html"%}
+{% block content %}
+    <a href="{% url 'posts:list' %}">View posts list</a></br>
+{% endblock %}
+{% block footer %}
+    <a href="{% url 'main:about_page' %}"> About</a>
+{% endblock %}

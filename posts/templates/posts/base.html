@@ -5,7 +5,15 @@
     <title>Bazowy html</title>
 </head>
 <body>
+{% block header%}
+    <header>
+        <h1>To jest header</h1>
+        <a href="{% url 'main:home_page' %}">Home Page</a>
+    </header>
+{% endblock %}
 {% block content %}
+{% endblock %}
+{% block footer %}
 {% endblock %}
 </body>
 </html>

@@ -1,10 +1,11 @@
 #from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 
 def hello_world(request):
-    return HttpResponse("Hello World")
+    return render(request,'main/home_page.html',{})
 
-def books(request):
-    return HttpResponse("Tu będzie moja biblioteka")
+def about_page(request):
+    return render(request,'main/about.html',{})
