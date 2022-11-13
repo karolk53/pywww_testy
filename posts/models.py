@@ -22,5 +22,9 @@ class Posts(models.Model):
     #
     sponsored = models.BooleanField(default=False)
 
+    #FOREIGN KEY TO USER that made a post
+    author = models.ForeignKey("auth.User",on_delete=models.CASCADE,related_name="posts")
+
+
     def __str__(self):
         return f'{self.id} {self.title}'

@@ -1,7 +1,9 @@
-{%extends "posts/base.html"%}
+{%extends "main/base.html"%}
+{% load static %}
+
 {% block content %}
-    <a href="{% url 'posts:list' %}">View posts list</a></br>
+    <img src="{% static 'main/img/blog_img.jpg' %}">
 {% endblock %}
 {% block footer %}
-    <a href="{% url 'main:about_page' %}"> About</a>
+    <p>&copy KK</p>
 {% endblock %}
